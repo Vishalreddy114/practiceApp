@@ -1,0 +1,54 @@
+
+
+<!DOCTYPE html>
+
+<head>
+    <title>Maitre D </title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+
+<body>
+    <header>
+        <h2>Maitre D</h2>
+    </header>
+    <table style="width:100%">
+        <tr>
+            <td>
+                <label for=" Total">Total: $</label>
+                <input type="number" id="totalvalue" >
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="Tip">Tip: $</label>
+                <span id="tipvalue"></span>
+            </td>
+            <td>
+                <label for=" Total">Rate: $</label>
+                <input type="number" id="ratevalue" >
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="Tax">Tax: $</label>
+                <span id="taxvalue"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="Grand Total">Grand Total: $</label>
+                <span id="grandvalue"></span>
+            </td>
+        </tr>
+
+
+    </table>
+
+    <div style="text-align:center">
+        <button onclick="Calculate()" style="border-radius: 10px;">Calculate</button>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</br>
+    <footer style="color:black">&copy 2020 By Vishal Reddy Vennavaram</footer>
