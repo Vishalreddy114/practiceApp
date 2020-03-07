@@ -10,49 +10,34 @@
     </ul>
 </nav> 
 <body>
-  <FORM NAME="sci-calc" method="POST" id="sci-calc">
-
-    <button TYPE="button" ID="calc">CALC</button>
-    <input type="text" name="stuff[]" class="input-field" id="first"/>
-    <input type="text" name="stuff[]" class="input-field" id="second"/>
-    <input type="text" name="stuff[]" class="input-field" id="third"/>
+  <main style="background-color:beige ">
+    <h2>Multiplication of numbers</h2>
+           <h3>Enter first Number :</h3>  <input id="a" type="Number" placeholder="First Number">
+        </br>
+    </br>
     
-    </FORM>
-  <main style="text-align: center;">
-    <h2>LCM of numbers</h2>
-   <h3>Enter first Number :</h3>  <input id="c" type="Number" placeholder="First Number">
-</br>
-</br>
-
-   <h3>Enter Second NUmber :</h3>  <input id="c" type="Number" placeholder="Second Number">
-</br>
-</br>
-
-<h3>Enter Third NUmber :</h3>  <input id="c" type="Number" placeholder="Third Number">
-</br>
-
-</br>
-<button type="button" id="convert" onclick="convertkms()">LCM of numbers</button>
-</br>
-<h3>Result  :</h3><input type="Number" id="d">
-</br>  
+           <h3>Enter Second NUmber :</h3>  <input id="b" type="Number" placeholder="Second Number">
+        </br>
+    </br>
+   
+    <h3>Enter Third NUmber :</h3>  <input id="c" type="Number" placeholder="Third Number">
+        </br>
     
-</main> 
+</br>
+      <button type="button" id="convert" onclick="Multiplication()">Product</button>
+    </br>
+    <h3>Result  :</h3><input type="Number" id="d" readonly>
+    </br>  
+    <hr>
+   
+     <h4>Link to the test. <a href="quit.html">Click here</a></h4>
+    <hr>
 
-<script>
-    function convertkms() {
-        if (document.getElementById("c").value != " ") {
-        var f = document.getElementById("c").value * 1.6;
-          document.getElementById("d").value = Math.round(f);
-        } else {
-          
-          document.getElementById("d").value = "please enter the miles in above textbox";
-        }
-      }
-</script>
-<hr>
-<footer>
-    <p>&copy; 2020 Vishal Reddy Vennavaram</p>
-</footer>
+  </main>
+  <script src="calc.js"></script>
+    
+ <footer>
+     <p>&copy; 2020 Vishal Reddy Vennavaram, all rights reserved</p>
+ </footer>
 </body>
 </html>
