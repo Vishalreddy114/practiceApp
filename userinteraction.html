@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" type="text/css" href="styles/vishal.css">
+        <meta charset="UTF-8" />
+  <nav >
+    <ul class="navLinks">
+        <li><a href="index.html" rel="noopener">Index</a></li>
+        <li><a href="contact.html" rel="noopener">Contact</a></li>
+        <li><a href="userinteraction.html" rel="noopener">User Interaction</a></li>
+    </ul>
+</nav> 
+<body>
+  
+  <main style="text-align: center;">
+    <h2>LCM of numbers</h2>
+   <h3>Enter first Number :</h3>  <input id="c" type="Number" placeholder="First Number">
+</br>
+</br>
+
+   <h3>Enter Second NUmber :</h3>  <input id="c" type="Number" placeholder="Second Number">
+</br>
+</br>
+
+<h3>Enter Third NUmber :</h3>  <input id="c" type="Number" placeholder="Third Number">
+</br>
+
+</br>
+<button type="button" id="convert" onclick="convertkms()">Sum</button>
+</br>
+<h3>Result  :</h3><input type="Number" id="d">
+</br>  
+    
+</main> 
+
+<script>
+    function convertkms() {
+        if (document.getElementById("c").value != " ") {
+        var f = document.getElementById("c").value * 1.6;
+          document.getElementById("d").value = Math.round(f);
+        } else {
+          
+          document.getElementById("d").value = "please enter the miles in above textbox";
+        }
+      }
+</script>
+<hr>
+<footer>
+    <p>&copy; 2020 Vishal Reddy Vennavaram</p>
+</footer>
+</body>
+</html>
