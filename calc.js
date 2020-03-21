@@ -4,16 +4,16 @@ function Multiplication(){
      var c = document.getElementById("c").value;
      
    
-   addValues(a,b,c);
+   mulValues(a,b,c);
  
   
  
  } 
- function addValues(a,b,c){
-     var add=0;
-     var add=parseInt(a)*parseInt(b)*parseInt(c); 
+ function mulValues(a,b,c){
+     var mul=0;
+     var mul=parseInt(a)*parseInt(b)*parseInt(c); 
   
  
-   document.getElementById("d").value=add;
-     return add;
+   document.getElementById("d").value=mul;
+     return mul;
  }
